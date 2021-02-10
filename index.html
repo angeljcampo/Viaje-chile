@@ -22,8 +22,8 @@
 
 <body class="bg-dark">
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <header id="inicio">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <img src="assets/img/viajes.svg" alt="" height="30px" class="mr-2">
                 <a class="navbar-brand" href="#">Viajes Chile</a>
@@ -34,16 +34,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quienes Somos</a>
+                            <a class="nav-link" href="#quienes">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Destacados</a>
+                            <a class="nav-link" href="#destacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -52,13 +52,13 @@
 
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active img-size">
+                <div class="carousel-item active">
                     <img src="assets/img/carousel1.jpg" class="d-block img-fluid" alt="...">
                 </div>
-                <div class="carousel-item img-size">
+                <div class="carousel-item">
                     <img src="assets/img/carousel2.jpg" class="d-block img-fluid" alt="...">
                 </div>
-                <div class="carousel-item img-size">
+                <div class="carousel-item">
                     <img src="assets/img/carousel3.jpg" class="d-block img-fluid" alt="...">
                 </div>
             </div>
@@ -73,16 +73,16 @@
         </div>
     </header>
 
-    <div class="container-fluid">
+    <div class="container-fluid d-none d-sm-block d-md-block" >
         <div class="container">
-            <section>
+            <section id="quienes">
                 <h2 class="border-bottom border-info text-light text-center pt-4 pb-3 font-weight-light"> ¿Quienes
                     somos?</h2>
             </section>
 
             <div class="row my-5">
 
-                <div class=" col-4 bg-transparent">
+                <div class=" col-4">
                     <div class="text-center bg-info mb-2">
                         <i class="fas fa-plane text-white fa-2x"></i>
                     </div>
@@ -138,9 +138,9 @@
 
     </div>
 
-    <div class="container-fluid">
-
-        <div class="container">
+    <div class="container-fluid" >
+    
+        <div class="container" id="destacados">
             <section>
                 <h2 class="border-bottom border-info text-light text-center pt-4 pb-3 font-weight-light"> Destacados
                 </h2>
@@ -184,69 +184,82 @@
                     </div>
                 </div>
             </div>
-
-
+            
+            
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid" id="contacto">
             <div class="container">
                 <section>
                     <h2 class="border-bottom border-info text-light text-center pt-4 pb-3 font-weight-light"> Contacto
                     </h2>
                 </section>
 
-                <div class="typeform-widget"
+                <div class="typeform-widget my-4"
                     data-url="https://form.typeform.com/to/cm153IFW?typeform-medium=embed-snippet"
                     style="width: 100%; height: 500px;"></div>
-                <script>
-                    (function () {
-                        var qs, js, q, s, d = document,
-                            gi = d.getElementById,
-                            ce = d.createElement,
-                            gt = d.getElementsByTagName,
-                            id = "typef_orm",
-                            b = "https://embed.typeform.com/";
-                        if (!gi.call(d, id)) {
-                            js = ce.call(d, "script");
-                            js.id = id;
-                            js.src = b + "embed.js";
-                            q = gt.call(d, "script")[0];
-                            q.parentNode.insertBefore(js, q)
-                        }
-                    })()
-                </script>
-
-
 
             </div>
 
         </div>
 
-
-
-
-
     </div>
 
+    <footer class="container-fluid bg-info">
+
+        <div class="container">
+            <div class="row">
+
+                <span class="text-light h4 ml-5 pt-1">VIAJES CHILE</span>
+
+                <div class="text-right ml-auto mr-5">
+                    <a href="https://github.com/"><i class="fab fa-github-square fa-2x mx-2"></i></a>
+                    <a href="https://www.linkedin.com/in/viajes-chile-959abb73/?originalSubdomain=cl"> <i class="fab fa-linkedin fa-2x mx-2"></i></a>
+                    <a href="https://twitter.com/viajeschile?lang=es"> <i class="fab fa-twitter-square fa-2x mx-2"></i></a>
+                    <a href="https://www.facebook.com/viajeschilecl/"> <i class="fab fa-facebook-square fa-2x mx-2"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
 
 
+    <script>
+        (function () {
+            var qs, js, q, s, d = document,
+                gi = d.getElementById,
+                ce = d.createElement,
+                gt = d.getElementsByTagName,
+                id = "typef_orm",
+                b = "https://embed.typeform.com/";
+            if (!gi.call(d, id)) {
+                js = ce.call(d, "script");
+                js.id = id;
+                js.src = b + "embed.js";
+                q = gt.call(d, "script")[0];
+                q.parentNode.insertBefore(js, q)
+            }
+        })()
+    </script>
 
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+         crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+         crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+         crossorigin="anonymous">
     </script>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 

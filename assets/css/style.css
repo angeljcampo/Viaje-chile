@@ -1,7 +1,11 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-
-.img-size{
-    height: 600px;
+footer a i{
+    color: #FFFFFF;
+}
+.navdark{
+    background-color: #000000;
+    
+    
 }
